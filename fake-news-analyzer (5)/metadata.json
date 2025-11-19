@@ -1,0 +1,5 @@
+{
+  "name": "Fake News Analyzer",
+  "description": "An advanced AI-powered tool to detect fake news. Paste any news article or headline, and our sophisticated model will analyze its authenticity, providing a prediction of 'Real' or 'Fake' along with a confidence score.",
+  "requestFramePermissions": []
+}

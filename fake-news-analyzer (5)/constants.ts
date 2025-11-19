@@ -1,0 +1,12 @@
+
+export const FAKE_NEWS_SAMPLES = [
+  `BREAKING: Scientists have discovered a new species of glowing mushrooms in the Amazon rainforest that can power small electronic devices. The mushrooms, nicknamed "Electro-Fungi," emit a steady bio-luminescent energy field that can be harnessed to charge a smartphone in under an hour. Local tribes have reportedly been using these mushrooms for centuries to light their homes. A tech startup has already secured exclusive rights to cultivate the fungi for commercial use.`,
+  `SHOCKING: A secret underground city has been discovered beneath Antarctica, inhabited by a civilization that predates humanity. Satellite images revealed thermal anomalies that led to the discovery. Government officials are trying to cover it up, claiming it's just a "geothermal vent," but whistleblowers state that advanced technology has been recovered from the site.`,
+  `Health Alert: Drinking three gallons of coffee a day creates a "caffeine shield" that prevents the common cold, according to a controversial new study funded by a major coffee chain. The study claims that the high acidity neutralizes viruses instantly upon contact, effectively "burning" them out before they can infect cells. Doctors warn against this practice.`
+];
+
+export const REAL_NEWS_SAMPLES = [
+  `Washington D.C. – The Federal Reserve announced today that it will hold interest rates steady, citing moderate economic growth and a stable labor market. In a statement following their two-day policy meeting, officials indicated that while inflation has shown signs of easing, it remains above their long-term target of 2%. The committee reiterated its commitment to monitoring incoming data to assess the appropriate stance of monetary policy.`,
+  `NASA's James Webb Space Telescope has captured the most detailed image yet of the "Pillars of Creation," a star-forming region in the Eagle Nebula. The new near-infrared image reveals precise details of the dust and gas clouds, allowing astronomers to identify previously unseen stars being born within the pillars. This data will help researchers revamp their models of star formation.`,
+  `A new study published in the Journal of the American Medical Association indicates that regular physical activity can significantly lower the risk of chronic diseases. Researchers tracked over 100,000 participants for a decade and found that just 30 minutes of moderate exercise daily is correlated with a 20% increase in life expectancy compared to sedentary individuals.`
+];

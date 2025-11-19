@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake News Detection: AI News Analyzer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      :root, html.theme-slate {
+        --color-primary: 24 37 54; /* slate-900 */
+        --color-secondary: 30 41 59; /* slate-800 */
+        --color-tertiary: 51 65 85; /* slate-700 */
+        --color-muted: 71 85 105; /* slate-600 */
+        --color-text-base: 226 232 240; /* slate-200 */
+        --color-text-muted: 148 163 184; /* slate-400 */
+        --color-text-subtle: 100 116 139; /* slate-500 */
+        --color-accent: 34 211 238; /* cyan-400 */
+        --color-accent-dark: 6 182 212; /* cyan-500 */
+      }
+      html.theme-zinc {
+        --color-primary: 24 24 27; /* zinc-900 */
+        --color-secondary: 39 39 42; /* zinc-800 */
+        --color-tertiary: 63 63 70; /* zinc-700 */
+        --color-muted: 82 82 91; /* zinc-600 */
+        --color-text-base: 228 228 231; /* zinc-200 */
+        --color-text-muted: 161 161 170; /* zinc-400 */
+        --color-text-subtle: 113 113 122; /* zinc-500 */
+        --color-accent: 52 211 153; /* emerald-400 */
+        --color-accent-dark: 16 185 129; /* emerald-500 */
+      }
+      html.theme-light {
+        --color-primary: 245 245 244; /* stone-100 */
+        --color-secondary: 250 250 249; /* stone-50 */
+        --color-tertiary: 228 228 231; /* zinc-200 */
+        --color-muted: 212 212 216; /* zinc-300 */
+        --color-text-base: 28 25 23; /* stone-900 */
+        --color-text-muted: 82 82 91; /* zinc-600 */
+        --color-text-subtle: 113 113 122; /* zinc-500 */
+        --color-accent: 37 99 235; /* blue-600 */
+        --color-accent-dark: 29 78 216; /* blue-700 */
+      }
+      .bg-primary { background-color: rgb(var(--color-primary)); }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: 'rgb(var(--color-primary) / <alpha-value>)',
+              secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
+              tertiary: 'rgb(var(--color-tertiary) / <alpha-value>)',
+              muted: 'rgb(var(--color-muted) / <alpha-value>)',
+              'text-base': 'rgb(var(--color-text-base) / <alpha-value>)',
+              'text-muted': 'rgb(var(--color-text-muted) / <alpha-value>)',
+              'text-subtle': 'rgb(var(--color-text-subtle) / <alpha-value>)',
+              accent: 'rgb(var(--color-accent) / <alpha-value>)',
+              'accent-dark': 'rgb(var(--color-accent-dark) / <alpha-value>)',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'pulse-ring': 'pulseRing 2s ease-in-out infinite',
+            },
+            keyframes: {
+              pulseRing: {
+                '0%, 100%': {
+                  'box-shadow': '0 0 0 2px rgb(var(--color-accent-dark) / 0.5)', 
+                },
+                '50%': {
+                  'box-shadow': '0 0 0 4px rgb(var(--color-accent-dark) / 0.2)',
+                },
+              },
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-primary text-text-base">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
